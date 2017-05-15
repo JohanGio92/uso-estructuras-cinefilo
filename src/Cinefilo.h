@@ -19,26 +19,6 @@ class Cinefilo {
             filtrarActoresSecundarios(Lista<Actor*>* actores,
                                       Lista<Pelicula*>* peliculasAnalizadas);
 
-    private:
-
-        /*
-         * post: devuelve si 'actor' es un Actor secundario (está en el
-         *       reparto pero no es protagonista) en alguna Pelicula
-         *       de 'peliculasAnalizadas'.
-         */
-        bool esSecundario(Actor* actor, Lista<Pelicula*>* peliculasAnalizadas);
-
-        /*
-         * post: devuelve si 'actor' es un Actor protagonista
-         *       en alguna Pelicula de 'peliculasAnalizadas'.
-         */
-        bool esProtagonista(Actor* actor, Lista<Pelicula*>* peliculasAnalizadas);
-
-        /*
-         * post: devuelve si 'actor' es un Actor del reparto
-         *       en alguna Pelicula de 'peliculasAnalizadas'.
-         */
-        bool estaEnElReparto(Actor* actor, Lista<Pelicula*>* peliculasAnalizadas);
 };
 
 #endif /* CINEFILO_H_ */

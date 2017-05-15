@@ -35,32 +35,6 @@ class Pelicula {
          *       incluyendo los protagonistas.
          */
         Lista<Actor*>* obtenerReparto();
-
-        /*
-         * post: devuelve si 'actor' es uno de los protagonistas de la Película.
-         */
-        bool estaProtagonizadaPor(Actor* actor);
-
-        /*
-         * post: devuelve si 'actor' pertenece al reparto de la Película.
-         */
-        bool estaEnElReparto(Actor* actor);
-
-    private:
-
-        bool estaEnLaLista(Actor* actor, Lista<Actor*>* actores);
 };
-
-
-
-
-
-
-
-
-
-
-
-
 
 #endif /* PELICULA_H_ */
